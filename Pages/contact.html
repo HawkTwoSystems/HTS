@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Hawk Two Systems</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Hawk Two Systems</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Downloads</button>
+                    <div class="dropdown-content">
+                      <a href="../Downloads/hawkos.html">HawkOS</a>
+                      <a href="../Downloads/hawkos.html">HawkOS Legacy</a>
+                      <a href="../Downloads/utilities.html">Hawk Two Utilities</a>
+                    </div>
+                  </div>    
+                <li><a href="../Pages/documentation.html">Documentation</a></li>
+                <li><a href="../Pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact-section">
+            <h2>Contact Us</h2>
+            <p>Have questions or need support? Fill out the form below, and we'll get back to you as soon as possible.</p>
+            
+            <form id="contact-form" action="submit_form.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+
+                <button class="button" type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hawk Two Systems. All rights reserved.</p>
+    </footer>
+</body>
+</html>
