@@ -75,7 +75,30 @@ button {
     color: #ffffff;
     background-color: #ff0080;
   }
+
+  .button-download {
+    padding: 10px 20px;
+    margin: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    color: #3cff00;
+    background-color: #3cff002f;
+    text-shadow: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: transparent;
+    border: 1px solid #ffffff00;
+    transition: 0.3s ease;
+    user-select: none;
+  }
   
+  .button-download:hover {
+    padding: 10px 30px;
+    color: #ffffff;
+    background-color: #3cff00;
+  }
   
 
 
@@ -184,6 +207,10 @@ button {
 .solution-text {
     color: white;
     text-align: left;
+}
+
+.solution-text p {
+    margin-bottom: 20px;
 }
 
 .solution-text h3 {
@@ -324,6 +351,14 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.separator {
+    height: 2px; /* Thickness of the separator */
+    background: linear-gradient(to right, rgba(255, 0, 128, 0), #ff0080, rgba(255, 0, 128, 0)); /* Gradient effect */
+    margin: 2rem 0; /* Spacing above and below the separator */
+    border-radius: 5px; /* Rounded edges */
+}
+
 
 /* Animations */
 @keyframes fadeIn {
