@@ -22,3 +22,28 @@ function downloadFile(fileName, fileUrl) {
 }
 
 
+// index.html
+document.querySelector('.burger-menu').addEventListener('click', () => {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+});
+
+// Showcase section
+document.addEventListener("DOMContentLoaded", () => {
+    const fadeInElements = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    fadeInElements.forEach((element) => {
+        observer.observe(element);
+    });
+});
+

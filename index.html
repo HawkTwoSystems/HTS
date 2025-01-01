@@ -4,53 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hawk Two Systems</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="../HTS/logo.ico">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
+    <header class="nav-bar">
         <div class="logo">
-            <h1>Hawk Two Systems</h1>
+            <img src="logo.png" alt="Hawk Two Systems Logo">
+            <span>Hawk Two Systems</span>
         </div>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <div class="dropdown">
-                    <button class="dropbtn">Downloads</button>
-                    <div class="dropdown-content">
-                      <a href="../HTS/Downloads/hawkos.html">HawkOS</a>
-                      <a href="../HTS/Downloads/hawkos.html">HawkOS Legacy</a>
-                      <a href="../HTS/Downloads/utilities.html">Hawk Two Utilities</a>
-                    </div>
-                  </div>    
-                <li><a href="../HTS/Pages/documentation.html">Documentation</a></li>
-                <li><a href="../HTS/Pages/license.html">Legal</a></li>
-                <li><a href="../HTS/Pages/contact.html">Contact</a></li>
+            <ul class="nav-links">
+                <li><a href="HTS/index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Download</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="HTS/Downloads/hawkos.html">HawkOS</a></li>
+                        <li><a href="HTS/Downloads/utilities.html">Utilities</a></li>
+                    </ul>
+                </li>
+                <li><a href="HTS/Pages/documentation.html">Documentation</a></li>
+                <li><a href="HTS/Pages/license.html">Legal</a></li>
+                <li><a href="HTS/Pages/contact.html">Contact</a></li>
             </ul>
-        </nav>
+        </nav>        
+        <div class="burger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
     </header>
 
     <main>
-        <section id="home">
-            <h2>Welcome to Hawk Two Systems</h2>
-            <p>Developer of cutting-edge software solutions</p>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Hawk Two Systems</h1>
+                <p>Your partner in innovative software solutions.</p>
+                <a class="button" href="#software-showcase">Get Started</a>
+            </div>
         </section>
 
-        <section id="downloads">
-            <h2>HawkOS</h2>
-            <ul>
-                <li><a href="Downloads/hawkos.html">HawkOS</a></li>
-                <li><a href="Downloads/hawkos.html">HawkOS Legacy</a></li>
-            </ul>
-            <h2>Other Utilities</h2>
-            <ul>
-                <li><a href="Downloads/utilities.html">Utilities</a></li>
-            </ul>
-        </section>     
+        <section id="software-showcase" class="fade-in">
+            <div class="showcase-box">
+                <div class="solution">
+                    <img src="Media/Images/Software/hawkos_a.png" alt="HawkOS" class="solution-img">
+                    <div class="solution-text">
+                        <h3>HawkOS</h3>
+                        <p>A lightweight kernel operating system designed for just the necessities. It has built-in security including a terminal with industry standard commands, with more to come. All to be run on a virtual machine for maximum flexibility.</p>
+                    </div>
+                </div>
+                <div class="solution">
+                    <img src="Media/Images/Software/image_sequencer_a.png" alt="Image Sequencer" class="solution-img">
+                    <div class="solution-text">
+                        <h3>Image Sequencer</h3>
+                        <p>An intuitive cloud storage solution with state-of-the-art encryption, ensuring your data is always secure and accessible anywhere.</p>
+                    </div>
+                </div>
+            </div>
+        </section>        
+        
     </main>
 
     <footer>
-        <p>&copy; 2024 Hawk Two Systems. All rights reserved.</p>
+        <p>&copy; 2025 Hawk Two Systems. All rights reserved.</p>
     </footer>
 
     <script src="scripts.js"></script>
