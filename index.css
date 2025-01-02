@@ -47,7 +47,6 @@ button {
   }
   
   button:hover {
-    padding: 10px 30px;
     color: #ffffff;
     background-color: #ff0080;
   }
@@ -71,7 +70,6 @@ button {
   }
   
   .button:hover {
-    padding: 10px 30px;
     color: #ffffff;
     background-color: #ff0080;
   }
@@ -95,7 +93,6 @@ button {
   }
   
   .button-download:hover {
-    padding: 10px 30px;
     color: #ffffff;
     background-color: #3cff00;
   }
@@ -110,7 +107,7 @@ button {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(20px);
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -126,7 +123,7 @@ button {
     position: absolute;
     top: 100%;
     left: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 1);
     backdrop-filter: blur(15px);
     padding: 10px 0;
     list-style: none;
@@ -178,7 +175,7 @@ button {
 }
 
 .showcase-box {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 1);
     border-radius: 20px;
     padding: 2rem;
     margin: 0 auto;
@@ -300,7 +297,7 @@ button {
 .burger-menu .line {
     width: 25px;
     height: 3px;
-    background-color: #333;
+    background-color: #ffffff;
     margin: 3px 0;
 }
 
@@ -353,8 +350,8 @@ footer {
 }
 
 .separator {
-    height: 2px; /* Thickness of the separator */
-    background: linear-gradient(to right, rgba(255, 0, 128, 0), #ff0080, rgba(255, 0, 128, 0)); /* Gradient effect */
+    height: 1px; /* Thickness of the separator */
+    background: rgba(255, 255, 255, 0.1);
     margin: 2rem 0; /* Spacing above and below the separator */
     border-radius: 5px; /* Rounded edges */
 }
@@ -386,7 +383,12 @@ footer {
     }
 
     .nav-links.active {
+        padding: 15px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
         display: flex;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(20px);
     }
 
     .burger-menu {
