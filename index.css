@@ -356,6 +356,58 @@ footer {
     border-radius: 5px; /* Rounded edges */
 }
 
+/* Announcements */
+/* Announcement Section Styles */
+#announcements {
+    padding: 4rem 1rem;
+    margin: 4rem auto;
+    max-width: 100%;
+}
+
+.showcase-box {
+    background: rgba(0, 0, 0, 1);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: calc(100% - 2rem);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.announcement {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.announcement h3 {
+    font-size: 1.5rem;
+    color: #ff0080;
+}
+
+.announcement-date {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.announcement p {
+    font-size: 1rem;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .announcement {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
 
 /* Animations */
 @keyframes fadeIn {
