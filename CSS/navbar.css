@@ -1,0 +1,70 @@
+.navbar {
+    width: 100%;
+    background-color: black;
+    border-bottom: 1px solid rgba(48, 53, 60, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 10px;
+    margin:  -10px;
+    margin-bottom: 0px;
+}
+
+.navbar-left,
+.navbar-right {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.navbar h1, h2, h3, h4, h5, h6 {
+    margin: 10px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    background-color: #1b1b1b;
+    padding: 20px;
+    overflow-y: auto;
+    border-right: 1px solid rgba(48, 53, 60, 1);
+    left: -270px; /* Hidden by default */
+    transition: 0.3s ease-in-out;
+}
+
+/* Sidebar Styles */
+.sidebar a, .dropdown-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+}
+
+.sidebar a:hover, .dropdown-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Sidebar Open */
+.sidebar.open {
+    left: 0;
+}
+
+.content.sidebar-open {
+    margin-left: 270px;
+}

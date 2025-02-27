@@ -1,0 +1,32 @@
+/* MOBILE RESPONSIVENESS */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    /* HIDE EVERYTHING EXCEPT MENU BUTTON AND TITLE */
+    .navbar-right,
+    .navbar-left > *:not(:first-child) { 
+        display: none; 
+    }
+
+    /* KEEP MENU BUTTON AND TITLE VISIBLE */
+    .navbar-left {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-left h3 {
+        display: block;
+        margin-left: 10px;
+    }
+
+    .navbar-left button:first-child {
+        display: flex;
+    }
+}

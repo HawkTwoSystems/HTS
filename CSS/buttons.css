@@ -1,0 +1,135 @@
+/* UNIVERSAL BUTTON STYLES */
+.textbox,
+.button-generic,
+.button-tinted-green,
+.button-tinted-magenta,
+.button-tinted-blue,
+.button-split,
+.dropdown-content,
+.button-link {
+    height: 35px;
+    min-width: 35px;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(146, 150, 157);
+    background-color: black;
+    border: 1px solid rgba(48, 53, 60, 1);
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    margin: 5px;
+    transition: 0.1s;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* BUTTON HOVER */
+.button-generic:hover,
+.button-tinted-green:hover,
+.button-tinted-magenta:hover,
+.button-tinted-blue:hover,
+.button-link:hover {
+    background-color: rgb(22, 27, 34);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+/* GREEN BUTTON */
+.button-tinted-green {
+    color: rgba(21, 226, 120, 1);
+    background-color: rgba(21, 226, 120, 0.15);
+    border: 1px solid rgba(21, 226, 120, 0.8);
+}
+
+.button-tinted-green:hover {
+    background-color: rgba(21, 226, 120, 0.25);
+    border-color: rgba(21, 226, 120, 1);
+}
+
+/* MAGENTA BUTTON */
+.button-tinted-magenta {
+    color: rgb(226, 21, 154, 1);
+    background-color: rgba(226, 21, 154, 0.15);
+    border: 1px solid rgba(226, 21, 154, 0.8);
+}
+
+.button-tinted-magenta:hover {
+    background-color: rgba(226, 21, 154, 0.25);
+    border-color: rgba(226, 21, 154, 1);
+}
+
+/* BLUE BUTTON */
+.button-tinted-blue {
+    color: rgb(21, 113, 226);
+    background-color: rgba(21, 113, 226, 0.15);
+    border: 1px solid rgba(21, 113, 226, 0.8);
+}
+
+.button-tinted-blue:hover {
+    background-color: rgba(21, 113, 226, 0.25);
+    border-color: rgba(21, 113, 226, 1);
+}
+
+/* TEXTBOX */
+.textbox {
+    height: 35px;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    border: 1px solid rgba(48, 53, 60, 1);
+    border-radius: 7px;
+    padding: 0px, 10px;
+    margin: 5px;
+    transition: 0.1s;
+    text-align: left;
+}
+
+/* SEARCH BOX */
+.search-box {
+    height: 35px;
+    width: 250px;
+    background-color: black;
+    border: 1px solid rgba(48, 53, 60, 1);
+    border-radius: 7px;
+    display: flex;
+    align-items: first baseline;
+    margin: 15px;
+}
+
+.search-box button {
+    color: white;
+    height: 35px;
+    width: 35px;
+    background-color: rgba(14, 17, 22, 1);
+    border-right: 1px solid rgba(48, 53, 60, 1);
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 7px 0px 0px 7px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+}
+
+/* Dropdown Styles */
+.dropdown-container {
+    display: none;
+    padding-left: 15px;
+}
+
+.dropdown-btn i {
+    transition: transform 0.3s ease;
+}
+
+.dropdown-btn.open i {
+    transform: rotate(90deg);
+}
+
+a {
+    color:  rgba(21, 113, 226, 1);
+    text-decoration: none;
+}

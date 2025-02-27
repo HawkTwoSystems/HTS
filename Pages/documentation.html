@@ -3,61 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hawk Two Systems</title>
-    <link rel="stylesheet" href="../style.css">
-    <link rel="icon" type="image/x-icon" href="../logo.ico">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Documentation</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>Documentation</h1>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="navbar-left">
+            <button class="button-generic" id="toggleSidebar"><i class="bi bi-list"></i></button>
+            <h3>Documentation</h3>
+            <a href="../index.html" class="button-generic"><i class="bi bi-house-door-fill"></i></a>
+            <div class="divider-vertical"></div>
+            <a href="../Pages/documentation.html" class="button-link">Documentation</a>
+            <a href="../Pages/contact.html" class="button-link">Contact</a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <div class="dropdown">
-                    <button class="dropbtn">Downloads</button>
-                    <div class="dropdown-content">
-                      <a href="../Downloads/hawkos.html">HawkOS</a>
-                      <a href="../Downloads/hawkos.html">HawkOS Legacy</a>
-                      <a href="../Downloads/utilities.html">Hawk Two Utilities</a>
-                    </div>
-                  </div>    
-                  <li><a href="../Pages/documentation.html">Documentation</a></li>
-                  <li><a href="../Pages/license.html">Legal</a></li>
-                <li><a href="../Pages/contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+        
+        <div class="navbar-right">
+            <input class="textbox" placeholder="Search Documentation">
+            <a href="../Pages/donate.html" class="button-tinted-green"><i class="bi bi-currency-dollar"></i> Donate</a>
+        </div>
+    </div> 
 
-    <main>
-        <section id="documentation">
-            <h2>HawkOS</h2>
-            <table id="myTable">
-                <tr class="header">
-                  <th style="width:60%;">Name</th>
-                  <th style="width:40%;">Description</th>
-                </tr>
-                <tr>
-                    <td><a href="../Media/Documents/HawkOS Setup Documentation.pdf" target="_blank">HawkOS v1.4.0 Setup Documentation</a></td>
-                    <td><p>HawkOS setup and installation guide. (PDF)</p></td>
-                </tr>
-                <tr>
-                    <td><a href="../Media/Documents/Getting Started.pdf" target="_blank">HawkOS v1.4.0 User Guide</a></td>
-                    <td><p>HawkOS basic usage guide. (PDF)</p></td>
-                </tr>
-                <tr>
-                    <td><a href="../Media/Documents/LICENSE AGREEMENT.pdf" target="_blank">Software License</a></td>
-                    <td><p>Hawk Two Systems License Agreement (PDF)</p></td>
-                </tr>
-              </table>
-        </section>
-    </main>    
+    <!-- SIDEBAR NAVIGATION -->
+    <div class="sidebar" id="sidebar">
+        <h3>Documentation</h3>
+        <button class="dropdown-btn">Getting Started <i class="bi bi-caret-right-fill"></i></button>
+        <div class="dropdown-container">
+            <a href="#">Introduction</a>
+            <button class="dropdown-btn">Installation <i class="bi bi-caret-right-fill"></i></button>
+            <div class="dropdown-container">
+                <a href="#">ScanHawk Desktop</a>
+                <a href="#">HawkOS</a>
+                <a href="#">TeamPortal</a>
+                <a href="#">Image Sequencer</a>
+            </div>
+        </div>
 
-    <footer>
-        <p>&copy; 2024 Hawk Two Systems. All rights reserved.</p>
+        <button class="dropdown-btn">Software & Systems <i class="bi bi-caret-right-fill"></i></button>
+        <div class="dropdown-container">
+            <button class="dropdown-btn">ScanHawk <i class="bi bi-caret-right-fill"></i></button>
+            <div class="dropdown-container">
+                <a href="#">ScanHawk Enterprise</a>
+                <a href="#">ScanHawk Desktop</a>
+            </div>
+            <a href="#">HawkOS</a>
+            <a href="#">TeamPortal</a>
+            <a href="#">Image Sequencer</a>
+        </div>
+
+        <a href="#">FAQ</a>
+        <a href="#">Contact Support</a>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="content" id="mainContent">
+        <div class="button-strip"><div class="breadcrumb"><a href="documentation.html">Home</a></div></div>
+
+        <h1>Introduction</h1>
+        <p>Welcome to the official documentation. Here you'll find everything you need to get started with our products.<br>You may use the sidebar to navigate between different products. See the <a href="../Documentation/Getting Started/Installation/installation.html">installation</a> documentation for help with installing any of our software.</p>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Company</h4>
+                <a href="#">About Us</a>
+                <a href="#">Legal</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <a href="#">Documentation</a>
+                <a href="../Pages/downloads.html">Downloads</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Support</h4>
+                <a href="../Pages/contact.html">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Hawk Two Systems. All rights reserved.</p>
+        </div>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script>
+        // Sidebar Toggle
+        document.getElementById("toggleSidebar").addEventListener("click", function() {
+            const sidebar = document.getElementById("sidebar");
+            const content = document.getElementById("mainContent");
+
+            sidebar.classList.toggle("open");
+            content.classList.toggle("sidebar-open");
+        });
+
+        // Dropdown Toggle
+        document.querySelectorAll(".dropdown-btn").forEach(button => {
+            button.addEventListener("click", function() {
+                this.classList.toggle("open");
+                const dropdownContent = this.nextElementSibling;
+
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        });
+    </script>
+
 </body>
 </html>

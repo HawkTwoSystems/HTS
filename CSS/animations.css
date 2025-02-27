@@ -1,0 +1,10 @@
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes stroke {
+    0%   { fill: rgba(72,138,204,0); stroke: rgba(255, 255, 255, 1); }
+    100% { fill: rgb(255, 255, 255); stroke: rgba(255, 255, 255, 0); }
+}

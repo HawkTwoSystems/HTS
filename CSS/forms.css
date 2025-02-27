@@ -1,0 +1,22 @@
+.textbox {
+    height: 35px;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    border: 1px solid rgba(48, 53, 60, 1);
+    border-radius: 7px;
+    padding: 0px 10px;
+    margin: 5px;
+    text-align: left;
+}
+
+.search-box {
+    height: 35px;
+    width: 250px;
+    background-color: black;
+    border: 1px solid rgba(48, 53, 60, 1);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+}
