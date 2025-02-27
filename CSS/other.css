@@ -8,7 +8,7 @@ svg {
 }
 
 svg text {
-	animation: stroke 5s infinite alternate;
+	animation: stroke 5s ease forwards;
 	stroke-width: 5;
 	stroke: #ffffff;
 	font-size: 40px;
@@ -101,4 +101,26 @@ svg text {
     color: #50fa7b;
     overflow-x: auto;
     border: 1px solid rgba(48, 53, 60, 1);
+}
+
+.note {
+    font-weight: 500;
+    padding: 10px;
+    min-height: 25px;
+    width: auto;
+    color: rgb(255, 221, 0);
+    background-color:rgba(255, 170, 0, 0.532);
+    border: rgb(231, 201, 6, 1) solid 1px;
+    border-radius: 10px;
+}
+
+.info {
+    font-weight: 500;
+    padding: 10px;
+    min-height: 25px;
+    width: auto;
+    color: rgb(255, 255, 255);
+    background-color:rgba(255, 255, 255, 0.532);
+    border: rgb(255, 255, 255) solid 1px;
+    border-radius: 10px;
 }
