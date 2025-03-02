@@ -124,3 +124,14 @@ svg text {
     border: rgb(255, 255, 255) solid 1px;
     border-radius: 10px;
 }
+
+pre {
+    font-family: monospace;
+    font-size: 14px;
+    color: white;
+    background-color: #0f0f0f;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    border: 1px solid rgba(48, 53, 60, 1);
+}

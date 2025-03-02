@@ -20,6 +20,17 @@
     padding-bottom: 5px;
 }
 
+.container img {
+    width: 60%;
+    border-radius: 10px;
+}
+
+.container .imagetext {
+    color: gray;
+    font-style: italic;
+    font-size: 14px;
+}
+
 .button-strip {
     display: flex;
     justify-content: first baseline;
@@ -85,6 +96,13 @@
     width: 1px;
     height: 15px;
     margin: 5px 10px 5px 10px;
+}
+
+.divider-vertical-full {
+    background-color: rgba(48, 53, 60, 1);
+    width: 1px;
+    height: auto;
+    margin: 0 10px 0 10px;
 }
 
 .divider-horizontal {
