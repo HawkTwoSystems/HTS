@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../CSS/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <title>HawkOS Documentation</title>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="navbar-left">
+            <button class="button-generic" id="toggleSidebar"><i class="bi bi-list"></i></button>
+            <h3>Documentation</h3>
+            <a href="../../../index.html" class="button-generic"><i class="bi bi-house-door-fill"></i></a>
+            <div class="divider-vertical"></div>
+            <a href="../../../Pages/documentation.html" class="button-link">Documentation</a>
+            <a href="../../../Pages/contact.html" class="button-link">Contact</a>
+        </div>
+        
+        <div class="navbar-right">
+            <input class="textbox" placeholder="Search Documentation">
+            <a href="../../../Pages/donate.html" class="button-tinted-green"><i class="bi bi-currency-dollar"></i> Donate</a>
+        </div>
+    </div> 
+
+    <!-- SIDEBAR NAVIGATION -->
+    <div class="sidebar" id="sidebar">
+        <h3>Documentation</h3>
+        <button class="dropdown-btn">Getting Started <i class="bi bi-caret-right-fill"></i></button>
+        <div class="dropdown-container">
+            <a href="#">Introduction</a>
+            <button class="dropdown-btn">Installation <i class="bi bi-caret-right-fill"></i></button>
+            <div class="dropdown-container">
+                <a href="#">HawkOS Legacy</a>
+                <a href="#">HawkOS 25</a>
+            </div>
+        </div>
+
+        <button class="dropdown-btn">Software & Systems <i class="bi bi-caret-right-fill"></i></button>
+        <div class="dropdown-container">
+            <a href="#">HawkOS Overview</a>
+            <a href="#">System Requirements</a>
+            <a href="#">User Guide</a>
+        </div>
+
+        <a href="#">FAQ</a>
+        <a href="#">Contact Support</a>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="content" id="mainContent">
+        <div class="button-strip"><div class="breadcrumb"><a href="../../../Pages/documentation.html">Home</a> > <a href="../Installation/installation.html">Installation</a> > <a href="hawkos.html">HawkOS</a></div></div>
+        <h1>HawkOS Documentation</h1>
+
+        <div class="note"><i class="bi bi-exclamation-triangle-fill"></i> Note: HawkOS Legacy is discontinued, but documentation is still available for reference. Any older versions than Legacy 1.5.0 is unavailable for download. If you need any older version for any reason, please contact <a>hawktwosystems@gmail.com.</a></div>
+
+        <h2>HawkOS Legacy</h2>
+        <div class="container">
+            <h3>System requirements</h3>
+            <ul>
+                <li><b>Processor:</b> 64-bit processor (ARM is not supported)</li>
+                <li><b>RAM:</b> 2 GB (64-bit)</li>
+                <li><b>Storage:</b> 500 MB (It is recommended to configure your machine with more if you plan on storing any files.)</li>
+                <li><b>Graphics</b> DirectX 9 or later with WDDM 1.0 driver</li>
+            </ul>
+        </div>
+        <p>HawkOS Legacy was the previous version of the HawkOS operating system. It provided a streamlined, lightweight kerne optimized for embedded and industrial applications.</p>
+        <h3>Installation</h3>
+        <p>As HawkOS Legacy is no longer supported, installation files are no longer officially available. However, if you have an existing installation, you can follow the steps below:</p>
+        <ul>
+            <li>Ensure your system meets the minimum requirements.</li>
+            <li>Use a bootable USB with HawkOS Legacy to install.</li>
+            <li>Follow the on-screen installation steps.</li>
+        </ul>
+
+        <div class="note"><i class="bi bi-exclamation-triangle-fill"></i> Note that some Legacy versions may be unstable or unavailable on physical hardware. A virtual machine may be required.</div>
+
+        <div class="divider-horizontal"></div>
+
+        <h2>HawkOS 25</h2>
+        <p>HawkOS 25 is the upcoming version of the HawkOS operating system, bringing enhanced security, faster performance, and improved system stability.</p>
+        <p><strong>Status:</strong> In Development</p>
+        <h3>New Features</h3>
+        <ul>
+            <li>New GUI</li>
+            <li>Modernized user interface with adaptive design.</li>
+            <li>Enhanced security protocols.</li>
+            <li>Faster boot times and optimized resource usage.</li>
+            <li>Expanded hardware compatibility.</li>
+        </ul>
+        <h3>Installation</h3>
+        <p>Once released, HawkOS 25 can be installed through a bootable USB or network installation. A detailed guide will be available upon release.</p>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Company</h4>
+                <a href="#">About Us</a>
+                <a href="#">Legal</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <a href="#">Documentation</a>
+                <a href="../Pages/downloads.html">Downloads</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Support</h4>
+                <a href="../Pages/contact.html">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Hawk Two Systems. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Sidebar Toggle
+        document.getElementById("toggleSidebar").addEventListener("click", function() {
+            const sidebar = document.getElementById("sidebar");
+            const content = document.getElementById("mainContent");
+
+            sidebar.classList.toggle("open");
+            content.classList.toggle("sidebar-open");
+        });
+
+        // Dropdown Toggle
+        document.querySelectorAll(".dropdown-btn").forEach(button => {
+            button.addEventListener("click", function() {
+                this.classList.toggle("open");
+                const dropdownContent = this.nextElementSibling;
+
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

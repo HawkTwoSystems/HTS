@@ -1,0 +1,61 @@
+/* TABLE STYLES */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid rgba(48, 53, 60, 1);
+    background-color: rgba(14, 17, 22, 1);
+    color: white;
+}
+
+th {
+    background-color: rgba(21, 113, 226, 0.15);
+    font-weight: 600;
+    color: rgba(21, 113, 226, 1);
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(22, 27, 34, 1);
+}
+
+tr:hover {
+    background-color: rgba(21, 113, 226, 0.1);
+    cursor: pointer;
+}
+
+/* HEADER STYLES */
+.header th {
+    background-color: rgba(21, 113, 226, 0.25);
+    color: rgba(21, 113, 226, 1);
+}
+
+/* LINK STYLES INSIDE TABLE */
+table a {
+    color: rgba(21, 113, 226, 1);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+table a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* RESPONSIVE TABLE STYLES */
+@media screen and (max-width: 768px) {
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}

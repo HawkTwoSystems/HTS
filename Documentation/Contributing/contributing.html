@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Contributing to Documentation</title>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="navbar-left">
+            <button class="button-generic" id="toggleSidebar"><i class="bi bi-list"></i></button>
+            <h3>Documentation</h3>
+            <a href="../../index.html" class="button-generic"><i class="bi bi-house-door-fill"></i></a>
+            <div class="divider-vertical"></div>
+            <a href="../../Pages/documentation.html" class="button-link">Documentation</a>
+            <a href="../../Pages/contact.html" class="button-link">Contact</a>
+        </div>
+        
+        <div class="navbar-right">
+            <input class="textbox" placeholder="Search Documentation">
+            <a href="../../Pages/donate.html" class="button-tinted-green"><i class="bi bi-currency-dollar"></i> Donate</a>
+        </div>
+    </div> 
+
+    <!-- SIDEBAR NAVIGATION -->
+    <div class="sidebar" id="sidebar">
+        <h3>Documentation</h3>
+        <button class="dropdown-btn">Getting Started <i class="bi bi-caret-right-fill"></i></button>
+        <div class="dropdown-container">
+            <a href="documentation.html">Introduction</a>
+            <button class="dropdown-btn">Installation <i class="bi bi-caret-right-fill"></i></button>
+            <div class="dropdown-container">
+                <a href="../../Documentation/Getting Started/Installation/scanhawk-desktop.html">ScanHawk Desktop</a>
+                <a href="../../Documentation/Getting Started/Installation/hawkos.html">HawkOS</a>
+                <a href="../../Documentation/Getting Started/Installation/teamportal.html">TeamPortal</a>
+                <a href="../../Documentation/Getting Started/Installation/image-sequencer.html">Image Sequencer</a>
+            </div>
+        </div>
+
+        <button class="dropdown-btn">Software & Systems <i class="bi bi-caret-right-fill"></i></button>
+        <div class="dropdown-container">
+            <button class="dropdown-btn">ScanHawk <i class="bi bi-caret-right-fill"></i></button>
+            <div class="dropdown-container">
+                <a href="../Documentation/Software and Systems/ScanHawk/scanhawk-enterprise.html">ScanHawk Enterprise</a>
+                <a href="../Documentation/Software and Systems/ScanHawk/scanhawk-desktop.html">ScanHawk Desktop</a>
+            </div>
+            <a href="../Documentation/Software and Systems/hawkos.html">HawkOS</a>
+            <a href="../Documentation/Software and Systems/teamportal.html">TeamPortal</a>
+            <a href="../Documentation/Software and Systems/image-sequencer.html">Image Sequencer</a>
+        </div>
+
+        <a href="../Pages/faq.html">FAQ</a>
+        <a href="../Pages/contact.html">Contact Support</a>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="content" id="mainContent">
+        <div class="button-strip">
+            <div class="breadcrumb">
+                <a href="../../Pages/documentation.html">Home</a> > <a href="contributing.html">Contributing</a>
+            </div>
+        </div>
+
+        <h1>Contributing to the Documentation</h1>
+
+        <p>Our documentation is an essential resource for our users. Keeping it up to date and accurate ensures that everyone benefits from clear, precise, and helpful information. Contributions from the community help improve quality, fix mistakes, and expand our coverage of various topics.</p>
+
+        <h2>Why Contribute?</h2>
+        <ul>
+            <li>Improve the quality and accuracy of our documentation.</li>
+            <li>Help new users understand the software more easily.</li>
+            <li>Gain experience contributing to open-source projects.</li>
+            <li>Be recognized for your contributions to the community.</li>
+        </ul>
+
+        <div class="container">
+                <h2>How to Contribute</h2>
+            <p>Follow these steps to contribute to the documentation:</p>
+
+            <h3>1. Fork the Repository</h3>
+            <p>Go to our <a href="https://github.com/HawkTwoSystems/HTS" target="_blank">GitHub repository</a> and click the "Fork" button. This will create a copy of the repository under your GitHub account.</p>
+
+            <h3>2. Clone the Repository</h3>
+            <p>Once you have forked the repository, clone it to your local machine using the following command:</p>
+            <pre><code>git clone https://github.com/your-username/your-repository.git</code></pre>
+
+            <h3>3. Create a New Branch</h3>
+            <p>Navigate to the cloned repository and create a new branch for your changes:</p>
+            <pre><code>cd your-repository
+    git checkout -b my-documentation-update</code></pre>
+
+            <h3>4. Make Your Changes</h3>
+            <p>Modify the necessary documentation files in the repository. Follow the existing format and structure to maintain consistency.</p>
+
+            <h3>5. Commit and Push Changes</h3>
+            <p>After making your edits, commit your changes with a meaningful message:</p>
+            <pre><code>git add .
+    git commit -m "Updated documentation for feature X"
+    git push origin my-documentation-update</code></pre>
+
+            <h3>6. Create a Pull Request</h3>
+            <p>Go to your repository on GitHub and open a Pull Request (PR) to merge your changes into the main branch of the project.</p>
+            <ul>
+                <li>Provide a clear title and description of your changes.</li>
+                <li>Link any related issues or discussions.</li>
+                <li>Wait for a maintainer to review and approve your PR.</li>
+            </ul>
+
+            <h3>7. Review and Merge</h3>
+            <p>Project maintainers will review your PR, provide feedback if necessary, and merge it once approved.</p>
+
+            <h2>Contribution Guidelines</h2>
+            <ul>
+                <li>Ensure all contributions follow the style and structure of the existing documentation.</li>
+                <li>Use clear and concise language.</li>
+                <li>Provide examples and screenshots when applicable.</li>
+                <li>Test any code snippets before adding them.</li>
+            </ul>
+
+            <p>Thank you for contributing! Your efforts help improve our documentation and support the community.</p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Company</h4>
+                <a href="#">About Us</a>
+                <a href="#">Legal</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <a href="#">Documentation</a>
+                <a href="../Pages/downloads.html">Downloads</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Support</h4>
+                <a href="../Pages/contact.html">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Hawk Two Systems. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Sidebar Toggle
+        document.getElementById("toggleSidebar").addEventListener("click", function() {
+            const sidebar = document.getElementById("sidebar");
+            const content = document.getElementById("mainContent");
+
+            sidebar.classList.toggle("open");
+            content.classList.toggle("sidebar-open");
+        });
+
+        // Dropdown Toggle
+        document.querySelectorAll(".dropdown-btn").forEach(button => {
+            button.addEventListener("click", function() {
+                this.classList.toggle("open");
+                const dropdownContent = this.nextElementSibling;
+
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

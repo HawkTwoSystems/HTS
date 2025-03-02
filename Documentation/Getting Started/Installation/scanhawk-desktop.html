@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../CSS/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Documentation</title>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="navbar-left">
+            <button class="button-generic" id="toggleSidebar"><i class="bi bi-list"></i></button>
+            <h3>Documentation</h3>
+            <a href="../../../index.html" class="button-generic"><i class="bi bi-house-door-fill"></i></a>
+            <div class="divider-vertical"></div>
+            <a href="../../../Pages/documentation.html" class="button-link">Documentation</a>
+            <a href="../../../Pages/contact.html" class="button-link">Contact</a>
+        </div>
+        
+        <div class="navbar-right">
+            <input class="textbox" placeholder="Search Documentation">
+            <a href="../../../Pages/donate.html" class="button-tinted-green"><i class="bi bi-currency-dollar"></i> Donate</a>
+        </div>
+    </div> 
+
+    <!-- SIDEBAR NAVIGATION -->
+    <div class="sidebar" id="sidebar">
+        <h3>Documentation</h3>
+        <button class="dropdown-btn">Getting Started <i class="bi bi-caret-right-fill"></i></button>
+        <div class="dropdown-container">
+            <a href="#">Introduction</a>
+            <button class="dropdown-btn">Installation <i class="bi bi-caret-right-fill"></i></button>
+            <div class="dropdown-container">
+                <a href="#">ScanHawk Desktop</a>
+                <a href="#">HawkOS</a>
+                <a href="#">TeamPortal</a>
+                <a href="#">Image Sequencer</a>
+            </div>
+        </div>
+
+        <button class="dropdown-btn">Software & Systems <i class="bi bi-caret-right-fill"></i></button>
+        <div class="dropdown-container">
+            <button class="dropdown-btn">ScanHawk <i class="bi bi-caret-right-fill"></i></button>
+            <div class="dropdown-container">
+                <a href="#">ScanHawk Enterprise</a>
+                <a href="#">ScanHawk Desktop</a>
+            </div>
+            <a href="#">HawkOS</a>
+            <a href="#">TeamPortal</a>
+            <a href="#">Image Sequencer</a>
+        </div>
+
+        <a href="#">FAQ</a>
+        <a href="#">Contact Support</a>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="content" id="mainContent">
+        <div class="button-strip"><div class="breadcrumb"><a href="../../../Pages/documentation.html">Home</a> > <a href="../Installation/installation.html">Installation</a> > <a href="scanhawk-desktop.html">ScanHawk Desktop</a></div></div>
+        <h1>Installation of ScanHawk Desktop</h1>
+        <div class="note"><i class="bi bi-exclamation-triangle-fill"></i> Note: ScanHawk Desktop is only available for Windows systems. Additional hardware is required.</div>
+        <p>ScanHawk Desktop is the desktop program used to power the ScanHawk system. With it you can register attendance using NFC.</p>
+        <p>Below is a guide on how to install the program. If you need help with usage, see <a href="../../Software and Systems/ScanHawk/scanhawk-desktop.html">ScanHawk Desktop</a>. If you need help with the full system, see <a href="../../Software and Systems/ScanHawk/scanhawk-enterprise.html">ScanHawk Enterprise</a>.</p>
+        <div class="divider-horizontal"></div>
+        <h2>Step 1: Downloading</h2>
+        <p>To install ScanHawk Desktop, visit our <a target="_blank" href="../../../Downloads/scanhawk.html">downloads page</a>.</p>
+        <p>Then you just find your preferred version, and click the correct download option as a .zip file.</p>
+        <h2>Step 2: Installation</h2>
+        <p>Now you should have a .zip file downloaded to your computer. The next steps are as follows:</p>
+        <ul>
+            <li>Extract the .zip file to a location on your computer.</li>
+            <li>You will now have multiple files inside a folder, including an exe file.</li>
+        </ul>
+        <p>That's it. Now everything you need is located withing this unzipped folder. To run the program, just open the program file. If you want to host a webserver with the PHP file located in the same folder, you may need to use a third-party service or program like XAMPP or something similar.</p>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Company</h4>
+                <a href="#">About Us</a>
+                <a href="#">Legal</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <a href="#">Documentation</a>
+                <a href="../Pages/downloads.html">Downloads</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Support</h4>
+                <a href="../Pages/contact.html">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Hawk Two Systems. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Sidebar Toggle
+        document.getElementById("toggleSidebar").addEventListener("click", function() {
+            const sidebar = document.getElementById("sidebar");
+            const content = document.getElementById("mainContent");
+
+            sidebar.classList.toggle("open");
+            content.classList.toggle("sidebar-open");
+        });
+
+        // Dropdown Toggle
+        document.querySelectorAll(".dropdown-btn").forEach(button => {
+            button.addEventListener("click", function() {
+                this.classList.toggle("open");
+                const dropdownContent = this.nextElementSibling;
+
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
