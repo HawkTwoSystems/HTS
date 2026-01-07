@@ -1,143 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/main.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-    <title>Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Error - 404</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+  <style>
+    a {
+        color: white;
+    }
+    a:hover {
+        color: red;
+        cursor: pointer;
+    }
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    a {
+      color: #e0e2f4;
+    }
+
+    body,
+    p {
+      font: normal 20px/1.25rem 'VT323', monospace;
+    }
+
+    h1 {
+      font: normal 2.75rem/1.05em 'VT323', monospace;
+    }
+
+    h2 {
+      font: normal 2.25rem/1.25em 'VT323', monospace;
+    }
+
+    h3 {
+      font: lighter 1.5rem/1.25em 'VT323', monospace;
+    }
+
+    h4 {
+      font: lighter 1.125rem/1.2222222em 'VT323', monospace;
+    }
+
+    body {
+      background: #0414a7;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 90%;
+      margin: auto;
+      max-width: 640px;
+    }
+
+    .bsod {
+      padding-top: 10%;
+    }
+
+    .bsod .neg {
+      text-align: center;
+      color: #0414a7;
+    }
+
+    .bsod .neg .bg {
+      background: #aaaaaa;
+      padding: 0 15px 2px 13px;
+    }
+
+    .bsod .title {
+      margin-bottom: 50px;
+    }
+
+    .bsod .nav {
+      margin-top: 35px;
+      text-align: center;
+    }
+
+    .bsod .nav .link {
+      text-decoration: none;
+      padding: 0 9px 2px 8px;
+    }
+
+    .bsod .nav .link:hover,
+    .bsod .nav .link:focus {
+      background: #aaaaaa;
+      color: #0414a7;
+    }
+  </style>
 </head>
 <body>
-
-    <!-- NAVBAR -->
-    <div class="navbar">
-        <div class="navbar-left">
-            <button class="button-generic"><i class="bi bi-list"></i></button>
-            <h3>Hawk Two Systems</h3>
-            <a href="index.html" class="button-generic"><i class="bi bi-house-door-fill"></i></a>
-            <a href="https://github.com/HawkTwoSystems" class="button-generic"><i class="bi bi-github"></i></a>
-            <div class="divider-vertical"></div>
-            <a href="Pages/license.html" class="button-link">Legal</a>
-            <a href="Pages/contact.html" class="button-link">Contact</a>
-        </div>
-        
-        <div class="navbar-right">
-            <!-- DROPDOWN BUTTON -->
-            <div class="dropdown">
-                <button class="button-generic dropdown-toggle">Downloads &#160; <i class="bi bi-caret-down-fill"></i></button>
-                <div class="dropdown-menu">
-                    <a href="Downloads/scanhawk.html">ScanHawk Desktop</a>
-                    <a href="Downloads/hawkos.html">HawkOS</a>
-                    <a href="Downloads/utilities.html">Utilities</a>
-                </div>
-            </div>
-            <a href="Pages/documentation.html" class="button-generic">Documentation</a>
-            <div class="divider-vertical"></div>
-            <input class="textbox" placeholder="Search">
-            <a href="Pages/announcements.html" class="button-link" style="border-color: red;"><i class="bi bi-megaphone-fill" style="color: red;"></i></a>
-            <a href="https://buymeacoffee.com/hawktwosystems" class="button-tinted-green"><i class="bi bi-currency-dollar"></i>Donate</a>
-        </div>
-    </div>        
-
-    <!-- MAIN CONTENT -->
-    <div class="container" style="background: rgb(131,58,180); background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); display: flex; align-items: center; justify-content: center; height: 200px;">
-        <div class="wrapper">
-            <svg>
-                <text x="50%" y="50%" dy=".50em" text-anchor="middle">
-                    Hawk Two Systems
-                </text>
-            </svg>
-        </div>
-        <h2 class="fade-in">Your partner in innovative software solutions</h2>
-    </div>
-    
-    <script src="JS/animations.js" defer></script>
-    <div class="container">
-        <h1>Home</h1>
-        <div class="divider-horizontal"></div>
-
-        <!-- ScanHawk Desktop -->
-        <div class="subcontent" style="display: flex; align-items: center;">
-            <h3><i style="color: rgb(29, 197, 253)" class="bi bi-motherboard"></i> &#160; ScanHawk Desktop</h3>
-            <p class="label-green">New</p>
-            <a href="Pages/scanhawk.html" class="button-generic" style="border-radius: 50px;">Read more</a>
-        </div>
-        <div class="subcontent" style="border: none;">
-            <p>A system designed to log attendance with ease using NFC technology. Prototype demonstration available.</p>
-        </div>
-        
-        <div class="divider-horizontal"></div>
-
-        <!-- HawkOS -->
-        <div class="subcontent" style="display: flex; align-items: center;">
-            <h3><i style="color: rgb(29, 253, 48)" class="bi bi-code-square"></i> &#160; HawkOS</h3>
-            <p class="label-yellow">Pre-Alpha</p>
-            <a class="button-generic" style="border-radius: 50px;">Documentation</a>
-            <a href="Downloads/hawkos.html" class="button-generic" style="border-radius: 50px;">Downloads</a>
-        </div>
-        <div class="subcontent" style="border: none;">
-            <p>A simple, easy-to-use system designed for security and capability. Pre-alpha with limited downloads available.</p>
-        </div>
-
-        <div class="divider-horizontal"></div>
-
-        <!-- TeamPortal -->
-        <div class="subcontent" style="display: flex; align-items: center;">
-            <h3><i style="color: rgb(29, 253, 48)" class="bi bi-code-square"></i> &#160; TeamPortal</h3>
-            <p class="label-yellow">Early Access</p>
-            <a class="button-generic" style="border-radius: 50px;">Read More</a>
-            <a href="Downloads/utilities.html#teamportal" class="button-generic" style="border-radius: 50px;">Downloads</a>
-        </div>
-        <div class="subcontent" style="border: none;">
-
-        </div> 
-
-        <div class="divider-horizontal"></div>
-
-        <!-- Image Sequencer -->
-        <div class="subcontent" style="display: flex; align-items: center;">
-            <h3><i style="color: rgb(29, 253, 48)" class="bi bi-code-square"></i> &#160; Image Sequencer</h3>
-            <a class="button-generic" style="border-radius: 50px;">Documentation</a>
-            <a href="Downloads/utilities.html#image-sequencer" class="button-generic" style="border-radius: 50px;">Downloads</a>
-        </div>
-        <div class="subcontent" style="border: none;">
-
-        </div>
-
-    </div>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-section">
-                <h4>Company</h4>
-                <a href="#">About Us</a>
-                <a href="#">Legal</a>
-            </div>
-
-            <div class="footer-section">
-                <h4>Resources</h4>
-                <a href="#">Documentation</a>
-                <a href="Pages/downlods-portal.html">Downloads</a>
-                <a href="#">Announcements</a>
-            </div>
-
-            <div class="footer-section">
-                <h4>Support</h4>
-                <a href="#">Contact Us</a>
-            </div>
-
-            <div class="footer-section">
-                <h4>Follow Us</h4>
-                <a href="#"><i class="bi bi-linkedin"></i> LinkedIn</a>
-                <a href="#"><i class="bi bi-github"></i> GitHub</a>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2024 Hawk Two Systems. All rights reserved.</p>
-        </div>
-    </footer>
-
+  <main class="bsod container">
+    <h1 class="neg title"><span class="bg">Error - 404</span></h1>
+    <p>Uh oh! This website has been moved elsewhere. You have a few options:</p>
+    * Visit <a href="https://www.hawktwosystems.no">hawktwosystems.no</a><br>
+    * Contact <a href="mailto:support@hawktwosystems.no">support</a> if you have any questions or concerns<br>
+    * Do nothing
+    </p>
+    <nav class="nav">
+      <a href="https://www.hawktwosystems.no" class="link">hawktwosystems</a>&nbsp;|&nbsp;<a href="https://www.github.com/HawkTwoSystems" class="link">GitHub</a>
+    </nav>
+    <nav class="nav">
+      <p>Copyright 2026 (C) Hawk Two Systems (Fredrik Pettersen) All rights reserved</p>
+    </nav>
+  </main>
 </body>
 </html>
